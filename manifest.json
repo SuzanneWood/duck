@@ -1,0 +1,20 @@
+{
+
+  "manifest_version": 2,
+  "name": "Duck",
+  "version": "1.0",
+
+  "description": "Adds a green border to all webpages containing the word duck",
+
+  "icons": {
+    "48": "icons/duck.jpg"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["duck.js"]
+    }
+  ]
+
+}
